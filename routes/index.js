@@ -36,12 +36,13 @@ let items = [
 
 /* HOMEPAGE. */
 router.get('/', function(req, res, next) {
+  console.log("log items dans route get", items)
   res.render('index', {items});
 });
 
 /* SHOP PAGE */
 router.get('/shop', function(req, res, next) {
-  console.log("log items dans route get", items)
+  
   res.render('shop', {items});
 });
 

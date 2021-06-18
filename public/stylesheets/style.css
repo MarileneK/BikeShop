@@ -11,11 +11,10 @@ a, a:hover{
     background-size: cover;
     background-position: center;
     height: 150px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .card {
-    margin-top: 200px;
     text-align: center;
 }
 
@@ -25,4 +24,8 @@ a, a:hover{
 
 .form-control{
     width: 10px
+}
+
+.goBasket{
+    margin-right: 5px
 }
