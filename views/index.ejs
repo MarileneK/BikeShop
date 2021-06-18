@@ -15,7 +15,7 @@
 
 <body>
 
-    <!-- header -->
+    <!-- HEADER -->
   <nav class="navbar navbar-light bg-dark">
       <a class="navbar" href="/shop">
       <img src="./images/bike-logo.svg" width="50" height="50" class="logo" alt="">
@@ -30,74 +30,24 @@
   <div id="picture-header"> 
     <div class="container-fluid">
         <div class="row">
-          <div class="col-12 col-sm-6 col-md-4">
 
+          <%
+          for (let i = 0 ; i < items.length ; i++) {
+          %>
+
+          <div class="col-12 col-sm-6 col-md-4">
             <div class="card">
-                <img src="./images/bike-1.jpg" class="card-img-top" alt="Bike 1">
+                <img src="./images/<%= items[i].picture%>.jpg" class="card-img-top" alt="Bike 1">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Buy</a>
+                  <h5 class="card-title"><%= items[i].name %></h5>
+                  <p><%= items[i].price %>€</p><a href="#" class="btn btn-primary">Buy</a>
                 </div>
             </div>
           </div>
 
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card">
-                <img src="./images/bike-2.jpg" class="card-img-top" alt="Bike 2">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Buy</a>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card">
-                <img src="./images/bike-3.jpg" class="card-img-top" alt="Bike 3">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Buy</a>
-                </div>
-            </div>
-          </div>
-          
-          <div class="col-12 col-sm-6 col-md-4">
-
-            <div class="card">
-                <img src="./images/bike-4.jpg" class="card-img-top" alt="Bike 1">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Buy</a>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card">
-                <img src="./images/bike-5.jpg" class="card-img-top" alt="Bike 2">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Buy</a>
-                </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4">
-            <div class="card">
-                <img src="./images/bike-6.jpg" class="card-img-top" alt="Bike 3">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Buy</a>
-                </div>
-            </div>
-          </div>
-
+          <%
+          }
+          %>
 
         </div>
     </div>
