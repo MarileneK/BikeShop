@@ -49,45 +49,24 @@
   </thead>
 
   <tbody>
+
+    <%
+    for (let i = 0 ; i < totalBasket.length ; i++) {
+    %>
+
     <tr class="table-Secondary">
       <th scope="row">1</th>
-      <td>Pic</td>
-      <td>Bike 1</td>
+      <td><img src="./images/<%= totalBasket[i].picture%>.jpg" class="card-img-shop" alt="Bike"></td>
+      <td><%= totalBasket[i].name %></td>
       <td><input class="form-control" type="text" placeholder="Default input"><button type="button" class="btn btn-outline-primary"><i class="far fa-hand-pointer"></i></button></td>
-      <td>550€</td>
-      <td>550€</td>
+      <td><%= totalBasket[i].price%>€</td>
+      <td><%= totalBasket[i].price%>€</td>
       <td><button type="button" class="btn btn-outline-primary"><i class="far fa-trash-alt"></i></button></td>
     </tr>
 
-    <tr class="table-Secondary">
-      <th scope="row">2</th>
-      <td>Pic</td>
-      <td>Bike 2</td>
-      <td><input class="form-control" type="text" placeholder="Default input"><button type="button" class="btn btn-outline-primary"><i class="far fa-hand-pointer"></i></button></td>
-      <td>500€</td>
-      <td>0€</td>
-      <td><button type="button" class="btn btn-outline-primary"><i class="far fa-trash-alt"></i></button></td>
-    </tr>
-
-    <tr class="table-Secondary">
-      <th scope="row">3</th>
-      <td>Pic</td>
-      <td>Bike 3</td>
-      <td><input class="form-control" type="text" placeholder="Default input"><button type="button" class="btn btn-outline-primary"><i class="far fa-hand-pointer"></i></button></td>
-      <td>500€</td>
-      <td>0€</td>
-      <td><button type="button" class="btn btn-outline-primary"><i class="far fa-trash-alt"></i></button></td>
-    </tr>
-
-    <tr class="table-Secondary">
-      <th scope="row"></th>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td>Total</td>
-      <td>550€</td>
-      <td></td>
-    </tr>
+    <%
+    }
+    %>
 
     <tr class="table-Secondary">
       <th scope="row"></th>
